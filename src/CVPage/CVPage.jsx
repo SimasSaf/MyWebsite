@@ -47,7 +47,7 @@ function CVPage() {
           <VscArrowLeft className="leftArrow" />
           <VscArrowRight className="rightArrow" />
           <div className="search">
-            <VscSearch className="magnifyingGlass" />
+            <VscSearch />
             <span className="myWebsite">MyWebsite</span>
           </div>
           <VscCopilot />
