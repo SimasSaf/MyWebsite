@@ -1,4 +1,4 @@
-export const setupEventListeners = (stateRef, toggleShader) => {
+export const setupEventHandlers = (stateRef) => {
   const s = stateRef.current;
 
   s.onResize = () => {
@@ -32,11 +32,8 @@ export const setupEventListeners = (stateRef, toggleShader) => {
     s.lightTarget.copy(s.intersectPoint);
   };
 
+
   window.addEventListener("resize", s.onResize);
   window.addEventListener("mousemove", s.onMouseMove);
-
-  const button = document.getElementById("underConstruction");
-  if (button) {
-    button.addEventListener("click", toggleShader.bind(null, stateRef));
-  }
+  window.addEventListener("click", s.onClick);
 };

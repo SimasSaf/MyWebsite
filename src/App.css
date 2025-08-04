@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "CartoonFont";
   src: url("/assets/CartoonFont.ttf") format("truetype");
   font-weight: normal;
@@ -16,10 +16,6 @@
 }
 
 .name {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,4 +46,4 @@
 
 .underConstruction.clicked {
   opacity: 0.5;
-}
+} */

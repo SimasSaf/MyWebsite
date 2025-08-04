@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-export const animate = (stateRef) => {
+export const setupLookingAroundCamera = (stateRef) => {
   const s = stateRef.current;
   const smoothFactor = 0.1;
   const lightSmoothFactor = 0.05;
@@ -19,7 +19,7 @@ export const animate = (stateRef) => {
       const delta = s.clock.getDelta();
       s.mixer.update(delta);
     }
-
+    
     s.renderer.render(s.scene, s.camera);
   };
 
