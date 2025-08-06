@@ -1,18 +1,6 @@
 import "./CVPage.scss";
-import {
-  VscArrowRight,
-  VscArrowLeft,
-  VscSearch,
-  VscCopilot,
-  VscChevronDown,
-  VscLayout,
-  VscLayoutSidebarLeft,
-  VscLayoutPanel,
-  VscLayoutSidebarRightOff,
-  VscChromeMinimize,
-  VscChromeRestore,
-  VscClose,
-} from "react-icons/vsc";
+import { Header } from "./header/Header";
+import { LeftPanel } from "./leftPanel/LeftPanel";
 
 function CVPage() {
   return (
@@ -30,48 +18,11 @@ function CVPage() {
     // </div>
 
     <div className="grid">
-      <div className="header">
-        <div className="left">
-          <img src="images/vscode.png" />
-          <span>File</span>
-          <span>Edit</span>
-          <span>Selection</span>
-          <span>View</span>
-          <span>Go</span>
-          <span>Run</span>
-          <span>Terminal</span>
-          <span>Help</span>
-        </div>
-
-        <div className="center">
-          <VscArrowLeft className="leftArrow" />
-          <VscArrowRight className="rightArrow" />
-          <div className="search">
-            <VscSearch />
-            <span className="myWebsite">MyWebsite</span>
-          </div>
-          <VscCopilot />
-          <VscChevronDown />
-        </div>
-
-        <div className="right">
-          <div className="layoutIcons">
-            <VscLayout />
-            <VscLayoutSidebarLeft />
-            <VscLayoutPanel />
-            <VscLayoutSidebarRightOff />
-          </div>
-          <div className="tabIcons">
-            <VscChromeMinimize />
-            <VscChromeRestore className="restore" />
-            <VscClose className="close" />
-          </div>
-        </div>
-      </div>
+      <Header />
       <div className="fileNameLeft"></div>
       <div className="fileNameRight"></div>
 
-      <div className="leftPanel">Left Panel</div>
+      <LeftPanel />
       <div className="explorer">Explorer</div>
       <div className="codeWindowLeft">Code Window Left</div>
       <div className="codeWindowRight">Code Window Right</div>

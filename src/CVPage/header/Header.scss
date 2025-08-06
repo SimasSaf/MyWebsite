@@ -1,0 +1,142 @@
+@use "../../colors.scss" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    > img {
+      height: 18px;
+      width: 18px;
+      margin-left: 0.7rem;
+      margin-right: 0.4rem;
+    }
+
+    > span {
+      font-size: 0.8rem;
+      cursor: default;
+      padding: 0.2rem 0.7rem;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $hover;
+      }
+    }
+  }
+
+  .center {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+
+    .rightArrow {
+      color: $text-not-selected;
+      border-radius: 5px;
+      padding: 0rem 0.2rem;
+      padding-bottom: 0.05rem;
+      cursor: default;
+    }
+
+    .leftArrow {
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 0.2rem 0.2rem;
+
+      &:hover {
+        background-color: $hover;
+      }
+    }
+
+    .search {
+      border: 1px solid $border-search;
+      border-radius: 7px;
+      background-color: $background-search;
+      width: 30vw;
+      color: $text-selected;
+      height: 1.5rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > * {
+        padding: 0 0.2rem;
+      }
+
+      .myWebsite {
+        font-size: 0.8rem;
+      }
+    }
+
+    .copilot {
+      margin-left: 0.5rem;
+      height: 1.5rem;
+      &:hover {
+        background-color: $border;
+        border-radius: 5px;
+      }
+    }
+
+    .copilotArrow {
+      height: 1.5rem;
+
+      &:hover {
+        background-color: $border;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+
+    .layoutIcons {
+      display: flex;
+      align-items: center;
+
+      > * {
+        cursor: pointer;
+        height: 1.5rem;
+        padding: 0rem 0.3rem;
+
+        &:hover {
+          background-color: $border;
+          border-radius: 5px;
+        }
+      }
+    }
+    .tabIcons {
+      display: flex;
+      align-items: center;
+
+      > * {
+        width: 1.75rem;
+        padding: 0.6rem;
+
+        &:hover {
+          background-color: $border;
+        }
+      }
+
+      .restore {
+        font-size: 0.95rem;
+      }
+
+      .close {
+        font-size: 1.25rem;
+        
+        &:hover {
+          background-color: #e81123;
+        }
+      }
+    }
+  }
+}
